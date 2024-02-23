@@ -48,3 +48,7 @@
 
 [FeaturePcd.ARM]
   gArmTokenSpaceGuid.PcdNormalMemoryNonshareableOverride
+
+[BuildOptions]
+  GCC:*_*_AARCH64_ASM_FLAGS = -march=armv8-a+sme
+  CLANGDWARF:*_*_AARCH64_ASM_FLAGS = -march=armv8-a+sme
