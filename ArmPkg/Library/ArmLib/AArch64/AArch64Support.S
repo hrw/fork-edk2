@@ -485,6 +485,12 @@ ASM_FUNC(ArmReadIdAA64Dfr1)
   ret
 
 
+ASM_FUNC(ArmReadIdAA64Fpfr0)
+  mrs   x0, s3_0_c0_c4_7
+#  mrs   x0, ID_AA64FPFR0_EL1
+  ret
+
+
 ASM_FUNC(ArmReadIdAA64Isar0)
   mrs   x0, ID_AA64ISAR0_EL1
   ret
@@ -497,6 +503,12 @@ ASM_FUNC(ArmReadIdAA64Isar1)
 
 ASM_FUNC(ArmReadIdAA64Isar2)
   mrs   x0, ID_AA64ISAR2_EL1
+  ret
+
+
+ASM_FUNC(ArmReadIdAA64Isar3)
+  mrs   x0, s3_0_c0_c6_3
+#  mrs   x0, ID_AA64ISAR3_EL1
   ret
 
 
@@ -515,6 +527,18 @@ ASM_FUNC(ArmReadIdAA64Mmfr2)
   ret
 
 
+ASM_FUNC(ArmReadIdAA64Mmfr3)
+  mrs   x0, s3_0_c0_c7_3
+#  mrs   x0, ID_AA64MMFR3_EL1
+  ret
+
+
+ASM_FUNC(ArmReadIdAA64Mmfr4)
+  mrs   x0, s3_0_c0_c7_4
+#  mrs   x0, ID_AA64MMFR4_EL1
+  ret
+
+
 ASM_FUNC(ArmReadIdAA64Pfr0)
   mrs   x0, ID_AA64PFR0_EL1
   ret
@@ -523,6 +547,13 @@ ASM_FUNC(ArmReadIdAA64Pfr0)
 ASM_FUNC(ArmReadIdAA64Pfr1)
   mrs   x0, ID_AA64PFR1_EL1
   ret
+
+
+ASM_FUNC(ArmReadIdAA64Pfr2)
+  mrs   x0, s3_0_c0_c4_2
+#  mrs   x0, ID_AA64PFR2_EL1
+  ret
+
 
 ASM_FUNC(ArmReadIdAA64Smfr0)
   mrs   x0, ID_AA64SMFR0_EL1

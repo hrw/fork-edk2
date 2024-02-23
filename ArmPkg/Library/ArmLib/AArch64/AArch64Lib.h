@@ -52,6 +52,12 @@ ArmReadIdAA64Dfr1 (
 
 UINTN
 EFIAPI
+ArmReadIdAA64Fpfr0 (
+  VOID
+  );
+
+UINTN
+EFIAPI
 ArmReadIdAA64Isar0 (
   VOID
   );
@@ -70,6 +76,12 @@ ArmReadIdAA64Isar2 (
 
 UINTN
 EFIAPI
+ArmReadIdAA64Isar3 (
+  VOID
+  );
+
+UINTN
+EFIAPI
 ArmReadIdAA64Mmfr0 (
   VOID
   );
@@ -80,13 +92,21 @@ ArmReadIdAA64Mmfr1 (
   VOID
   );
 
-/** Reads the ID_AA64MMFR2_EL1 register.
-
-   @return The contents of the ID_AA64MMFR2_EL1 register.
-**/
 UINTN
 EFIAPI
 ArmReadIdAA64Mmfr2 (
+  VOID
+  );
+
+UINTN
+EFIAPI
+ArmReadIdAA64Mmfr3 (
+  VOID
+  );
+
+UINTN
+EFIAPI
+ArmReadIdAA64Mmfr4 (
   VOID
   );
 
@@ -99,6 +119,12 @@ ArmReadIdAA64Pfr0 (
 UINTN
 EFIAPI
 ArmReadIdAA64Pfr1 (
+  VOID
+  );
+
+UINTN
+EFIAPI
+ArmReadIdAA64Pfr2 (
   VOID
   );
 
